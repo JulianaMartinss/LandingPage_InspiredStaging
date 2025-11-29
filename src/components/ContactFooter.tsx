@@ -98,9 +98,15 @@ const ContactFooter: React.FC = () => {
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-stone-800 mb-6">
             Ready to elevate your property?
           </h2>
+          <a 
+            href="https://wa.me/14046435225"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
           <button className="bg-stone-800 text-white font-bold py-4 px-12 rounded-full hover:bg-olive-dark transition-colors shadow-lg transform hover:-translate-y-1">
             Contact Us
           </button>
+          </a>
         </div>
       </div>
 
@@ -113,7 +119,14 @@ const ContactFooter: React.FC = () => {
               
               <div className="flex space-x-4">
                 <a href="#" className="text-stone-200 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
-                <a href="#" className="text-stone-200 hover:text-white transition-colors"><Facebook className="w-5 h-5" /></a>
+                <a href="https://www.facebook.com/profile.php?id=100057303105494" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-200 hover:text-white transition-colors"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+
               </div>
             </div>
 

@@ -52,7 +52,10 @@ const Navbar: React.FC = () => {
             ))}
 
             <a
-              href="#contact"
+              href="https://wa.me/14046435225"
+              target="_blank"
+              rel="noopener noreferrer"
+
               className={`ml-4 px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest border transition-all duration-300 ${
                 isScrolled
                   ? 'border-stone-800 text-stone-800 hover:bg-stone-800 hover:text-white'
@@ -95,7 +98,9 @@ const Navbar: React.FC = () => {
             </a>
           ))}
           <a
-            href="#contact"
+            href="https://wa.me/14046435225"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsMobileMenuOpen(false)}
             className="bg-stone-800 text-white text-center py-4 rounded-lg font-bold uppercase tracking-widest text-sm mt-4 hover:bg-olive-dark transition-colors shadow-lg"
           >
