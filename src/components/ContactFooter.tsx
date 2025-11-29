@@ -152,9 +152,11 @@ const ContactFooter: React.FC = () => {
               <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-sm">Explore</h4>
               <ul className="space-y-3 text-stone-100">
                 <li><a href="#home" className="hover:text-white hover:underline underline-offset-4 decoration-white transition-all">Home</a></li>
-                <li><a href="#why-us" className="hover:text-white hover:underline underline-offset-4 decoration-white transition-all">Why Staging Works</a></li>
+                <li><a href="#why-staging-works" className="hover:text-white hover:underline underline-offset-4 decoration-white transition-all">Why Staging Works</a></li>
                 <li><a href="#gallery" className="hover:text-white hover:underline underline-offset-4 decoration-white transition-all">Gallery</a></li>
                 <li><a href="#projects" className="hover:text-white hover:underline underline-offset-4 decoration-white transition-all">Latest Projects</a></li>
+                <li><a href="#about" className="hover:text-white hover:underline underline-offset-4 decoration-white transition-all">About</a></li>
+                <li><a href="#faq" className="hover:text-white hover:underline underline-offset-4 decoration-white transition-all">FAQ</a></li>
               </ul>
             </div>
           </div>

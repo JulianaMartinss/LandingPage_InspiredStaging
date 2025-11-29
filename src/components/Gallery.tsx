@@ -1,45 +1,43 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { ArrowLeftRight, ChevronLeft, ChevronRight, Upload, Image as ImageIcon } from 'lucide-react';
 
+import masterBefore from "../media/before-room.jpeg";
+import masterAfter from "../media/after-room.jpeg";
+
+import diningroomBefore from "../media/before-dinng room.jpeg";
+import diningroomAfter from "../media/after-dinng room.jpeg";
+
+import livingroomBefore from "../media/before-sala.jpeg";
+import livingroomAfter from "../media/after-sala.jpeg";
+
+
+
 // ==============================================================================
 // CONFIGURAÇÃO DA GALERIA
 // ==============================================================================
 const INITIAL_PROJECTS_DATA = [
   {
     id: 1,
-    title: "Living Room Revival",
-    category: "Apartment",
-    beforeImg: "https://images.unsplash.com/photo-1583847661884-372075677a28?auto=format&fit=crop&q=80&w=800&grayscale",
-    afterImg: "https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&q=80&w=800"
+    title: "Master Room",
+    category: "Residential",
+    beforeImg: masterBefore,
+    afterImg: masterAfter
   },
   {
     id: 2,
-    title: "Master Suite",
+    title: "Dining Room",
     category: "Residential",
-    beforeImg: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800&grayscale",
-    afterImg: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&q=80&w=800"
+    beforeImg: diningroomBefore,
+    afterImg: diningroomAfter
   },
   {
     id: 3,
-    title: "Bright Kitchen",
-    category: "Compact Living",
-    beforeImg: "https://images.unsplash.com/photo-1484154218962-a1c002085aac?auto=format&fit=crop&q=80&w=800&grayscale",
-    afterImg: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&q=80&w=800"
+    title: "Living Room",
+    category: "Residential",
+    beforeImg: livingroomBefore,
+    afterImg: livingroomAfter
   },
-  {
-    id: 4,
-    title: "Cozy Den",
-    category: "Family Home",
-    beforeImg: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800&grayscale",
-    afterImg: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    id: 5,
-    title: "Modern Dining",
-    category: "Open Concept",
-    beforeImg: "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&q=80&w=800&grayscale",
-    afterImg: "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&q=80&w=800"
-  }
+
 ];
 
 const Gallery: React.FC = () => {

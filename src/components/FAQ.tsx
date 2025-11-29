@@ -28,7 +28,7 @@ const FAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-24 bg-[#ede9e2]">
+    <section id="faq" className="py-24 bg-[#ede9e2]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="font-serif text-3xl md:text-4xl font-bold text-stone-800 text-center mb-12">
           Frequently Asked Questions
@@ -48,16 +48,16 @@ const FAQ: React.FC = () => {
                 {openIndex === index ? (
                   <Minus className="w-5 h-5 text-olive-gray flex-shrink-0" />
                 ) : (
-                  <Plus className="w-5 h-5 text-stone-400 flex-shrink-0" />
+                  <Plus className={`w-5 h-5 text-stone-400 flex-shrink-0 transition-transform ${openIndex === index ? 'rotate-45 text-olive-gray' : ''}`} />
                 )}
               </button>
               
               <div 
-                className={`transition-all duration-300 ease-in-out ${
-                  openIndex === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
+                className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                  openIndex === index ? 'max-h-[999px] opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="p-6 pt-0 text-stone-600 leading-relaxed border-t border-transparent">
+                <div className="px-6 py-4 text-stone-600 leading-relaxed border-t border-stone-200">
                   {faq.answer}
                 </div>
               </div>
