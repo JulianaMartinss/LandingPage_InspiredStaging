@@ -24,7 +24,7 @@ const Testimonials: React.FC = () => {
           <div className="flex flex-col gap-4 group items-center w-full max-w-[240px]">
             <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all bg-stone-100">
               <video
-                src="media/video1.mp4"
+                src="assets/video1.mp4"
                 controls
                 className="w-full h-full object-cover object-center"
               />
@@ -40,7 +40,7 @@ const Testimonials: React.FC = () => {
           <div className="flex flex-col gap-4 group items-center w-full max-w-[240px]">
             <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all bg-stone-100">
               <video
-                src="media/video2.mp4"
+                src="assets/video2.mp4"
                 controls
                 className="w-full h-full object-cover object-center"
               />
@@ -61,7 +61,7 @@ const Testimonials: React.FC = () => {
             {/* PHOTO */}
             <div className="w-16 h-16 mx-auto mb-3">
               <img
-                src="/media/john.jpeg"
+                src="assets/john.jpeg"
                 alt="Realtor John"
                 className="w-full h-full rounded-full object-cover object-[center_30%] shadow-md"
               />

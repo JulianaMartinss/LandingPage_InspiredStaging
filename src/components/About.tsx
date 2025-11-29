@@ -16,7 +16,7 @@ const About: React.FC = () => {
               {/* Container da imagem */}
               <div className="relative z-10 rounded-2xl shadow-xl overflow-hidden aspect-[4/5] w-64">
                 <img
-                  src="media/about-pic.png"
+                  src="assets/about-pic.png"
                   alt="Nastia Grimes - Inspired Staging"
                   className="w-full h-full object-cover"
                 />
