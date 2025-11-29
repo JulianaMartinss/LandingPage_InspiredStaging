@@ -10,6 +10,7 @@ const INITIAL_PROJECTS_DATA = [
   {
     id: 1,
     title: "Master Room",
+    category: "Bedroom",
     beforeImg: `${base}images/before-room.jpeg`,
     afterImg: `${base}images/after-room.jpeg`,
   },
@@ -17,12 +18,14 @@ const INITIAL_PROJECTS_DATA = [
     id: 2,
     title: "Dining Room",
     // arquivo no public tem 'dinng' no nome — usar nome existente ou renomear arquivo
+    category: "Dining",
     beforeImg: `${base}images/before-dinng-room.jpeg`,
     afterImg: `${base}images/after-dinng-room.jpeg`,
   },
   {
     id: 3,
     title: "Living Room",
+    category: "Living",
     beforeImg: `${base}images/before-sala.jpeg`,
     afterImg: `${base}images/after-sala.jpeg`,
   },
