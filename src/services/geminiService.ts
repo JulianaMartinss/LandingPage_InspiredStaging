@@ -4,46 +4,48 @@ let aiClient: GoogleGenAI | null = null;
 
 const getAiClient = (): GoogleGenAI => {
   if (!aiClient) {
-    // Safely access process.env to avoid ReferenceError in some browser environments
-    const apiKey = (typeof process !== 'undefined' && process.env && process.env.API_KEY) || '';
+    const apiKey = import.meta.env.VITE_GEMINI_API_KEY || '';
     aiClient = new GoogleGenAI({ apiKey });
   }
   return aiClient;
 };
 
-/**
- * Generates a quick, accessible home staging tip based on a room description.
- * Uses Gemini Flash for speed and conciseness.
- */
 export const getStagingTip = async (roomDescription: string): Promise<string> => {
   try {
     const ai = getAiClient();
-    
-    // We check for API key indirectly or handle the failure
-    // Note: The SDK might not expose the key back, but if the call fails, we catch it.
-    
+
     const prompt = `
-      You are an expert in accessible Home Staging, focused on helping everyday people sell their homes.
-      The user described the following room or problem: "${roomDescription}".
-      
-      Provide one (1) practical, budget-friendly, and welcoming tip to improve this environment for sale.
-      The tip should be at most 3 sentences long. The tone should be empathetic, reassuring, and professional, without sounding elitist.
-      Focus on lighting, decluttering, or neutral colors.
+      You are an expert in accessible Home Staging...
+      The user described: "${roomDescription}".
+      Provide one practical, budget-friendly tip...
     `;
 
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash',
       contents: prompt,
-      config: {
-        maxOutputTokens: 150,
-        temperature: 0.7,
-      }
+      config: { maxOutputTokens: 150, temperature: 0.7 }
     });
 
-    return response.text || "Try removing personal items like photos and collections so buyers can imagine themselves living in the space.";
+    return response.text || "Fallback tip...";
   } catch (error) {
     console.error("Error fetching staging tip:", error);
-    // Fallback message if API fails or key is missing
-    return "To brighten the room, try adding a large mirror on the wall opposite the window. This reflects natural light and makes the space feel larger and more welcoming instantly.";
+    return "Fallback tip if API fails...";
+  }
+};
+
+export const testGeminiKey = async () => {
+  try {
+    const ai = getAiClient();
+    console.log("API key configurada?", !!import.meta.env.VITE_GEMINI_API_KEY);
+
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: "Say 'Hello World!' in one sentence.",
+      config: { maxOutputTokens: 10 }
+    });
+
+    console.log("Resposta de teste do Gemini:", response.text);
+  } catch (error) {
+    console.error("Erro no teste do Gemini:", error);
   }
 };

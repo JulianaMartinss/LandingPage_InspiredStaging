@@ -8,6 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "deploy": "vite build && rimraf docs && npx mkdirp docs && cpy \"dist/**/*\" docs/ --recursive"
+
   },
   "dependencies": {
     "@google/genai": "^1.30.0",
