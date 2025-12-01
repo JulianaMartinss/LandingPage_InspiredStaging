@@ -17,7 +17,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Do you provide furniture and decor?",
-      answer: "No. I don’t provide rental furniture. I work with my own decor pieces and accessories to enhance your space and create a clean, inviting look."
+      answer: "Yes. For empty homes, I provide all furniture and décor. For occupied homes, I elevate the space by thoughtfully styling the seller’s existing pieces."
     },
     {
       question: "Does staging really help sell faster?",

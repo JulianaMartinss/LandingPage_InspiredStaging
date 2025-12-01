@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
         <div className="max-w-2xl animate-fade-in-up">
           
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-stone-900 leading-tight mb-8">
-            Transform real homes into inviting spaces that <span className="text-olive-gray">sell faster.</span>
+            Transform homes into inviting spaces that <span className="text-olive-gray">sell faster.</span>
           </h1>
           
           <div className="flex flex-col sm:flex-row gap-4">

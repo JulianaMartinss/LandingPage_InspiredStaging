@@ -32,11 +32,11 @@ const About: React.FC = () => {
               My name is Nastia Grimes, founder of Inspired Staging. Since 2013, I’ve been helping transform homes into inviting, memorable spaces that stand out to buyers.
             </p>
             <p className="text-stone-100 leading-relaxed mb-8">
-              I believe great presentation doesn’t require a luxury budget — just thoughtful design and attention to detail. My goal is to help homeowners and realtors showcase each property’s true potential through clean, warm, and intentional styling.
+              Great presentation doesn’t require a luxury budget, just thoughtful design and attention to detail. My goal is to help homeowners and realtors showcase each property’s true potential through clean, warm, and intentional styling.
             </p>
             <div className="space-y-4">
               <p className="font-serif italic text-xl text-white">
-                “I focus on creating spaces filled with light, comfort, and flow — the kind that buyers instantly connect with.”
+                “I focus on creating spaces filled with light, comfort, and flow, the kind that buyers instantly connect with.”
               </p>
             </div>
           </div>
