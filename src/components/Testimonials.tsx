@@ -5,7 +5,7 @@ import { Play } from "lucide-react";
 const base = import.meta.env.BASE_URL || '/';
 const johnImg = `${base}images/john.jpeg`;
 const video1 = `${base}videos/video1.mp4`;
-const video2 = `${base}videos/video2.mp4`;
+const video2 = `${base}videos/video2fixed.mp4`;
 
 
 const Testimonials: React.FC = () => {
