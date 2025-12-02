@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
               transition-all duration-300 ${
                 isContactPage
                   ? "hover:text-white hover:bg-[#6B705C]"
-                  : "hover:text-[#6B705C] hover:bg-[#E6E4D9]"
+                  : "hover:text-white hover:bg-[#6B705C]"
               }`}
             >
               {link.name}
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
             className={`p-2 rounded-md transition ${
               isContactPage
                 ? 'text-[#6B705C] hover:text-white hover:bg-[#6B705C]'
-                : 'text-stone-800 hover:text-[#6B705C] hover:bg-[#E6E4D9]'
+                : 'text-stone-800 hover:text-white hover:bg-[#6B705C]'
             }`}
           >
             {isMobileMenuOpen ? <X /> : <Menu />}
@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
                 className={`text-xl text-stone-700 border-b pb-3 transition ${
                   isContactPage
                     ? "hover:text-white hover:bg-[#6B705C]"
-                    : "hover:text-[#6B705C] hover:bg-[#E6E4D9]"
+                    : "hover:text-white hover:bg-[#6B705C]"
                 }`}
               >
                 {link.name}

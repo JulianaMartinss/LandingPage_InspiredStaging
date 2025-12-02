@@ -5,7 +5,6 @@ const CallToAction: React.FC = () => {
   const navigate = useNavigate();
 
   const goToContact = () => {
-    // vai para a rota /contact (sem state para evitar scroll indesejado)
     navigate("/contact");
   };
 
@@ -24,32 +23,20 @@ const CallToAction: React.FC = () => {
 
         <button
           onClick={goToContact}
-          className={`
+          className="
             px-8 py-4 rounded-full font-semibold tracking-wide
             bg-black text-white shadow-lg transition-all duration-300
-            hover:scale-105
+            hover:scale-105 hover:bg-[#6b705c] hover:text-white
             button-bounce
-            `}
-          style={{ /* fallback color for older browsers */ }}
+          "
         >
-          <span
-            className="transition-colors duration-300"
-            style={{ /* color will flip via Tailwind hover classes below */ }}
-          >
-            Contact Us
-          </span>
+          Contact Us
         </button>
       </div>
-
-      {/* Tailwind pseudo hover color: we need to override background on hover.
-          Since inline class can't mix hover:bg-... with button-bounce, add it here via utility classes */}
-      <style jsx>{`
-        /* Extra: make the button turn olive on hover */
-        button:hover { background-color: #6b705c !important; color: white !important; border-color: rgba(255,255,255,0.06); }
-      `}</style>
     </section>
   );
 };
 
 export default CallToAction;
+
 
