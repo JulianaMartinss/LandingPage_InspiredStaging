@@ -12,3 +12,13 @@ html {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes buttonBounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.button-bounce:hover {
+  animation: buttonBounce 0.25s ease;
+}

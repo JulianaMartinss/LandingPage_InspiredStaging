@@ -9,7 +9,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Is home staging expensive?",
-      answer: "Not at all — it can be tailored to your budget. In fact, staging often costs far less than the first price reduction most sellers make if the home sits on the market too long."
+      answer: "Not at all, it can be tailored to your budget. In fact, staging often costs far less than the first price reduction most sellers make if the home sits on the market too long."
     },
     {
       question: "How long does staging take?",
@@ -33,30 +33,28 @@ const FAQ: React.FC = () => {
         <h2 className="font-serif text-3xl md:text-4xl font-bold text-stone-800 text-center mb-12">
           Frequently Asked Questions
         </h2>
-        
+
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-lg border border-stone-200/50 shadow-sm overflow-hidden"
-            >
+            <div key={index} className="bg-white rounded-lg border border-stone-200/50 shadow-sm overflow-hidden">
+              {/* Faixa colorida acima da pergunta */}
+              <div className="h-2 w-full bg-stone-600"></div>
+
               <button
-                className="w-full flex justify-between items-center p-6 text-left focus:outline-none hover:bg-stone-50 transition-colors"
+                className="faq-btn w-full flex justify-between items-center p-6 text-left focus:outline-none bg-white transition-colors"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <span className="font-serif font-medium text-stone-800 text-lg">{faq.question}</span>
+                <span className="font-serif font-medium text-stone-800 text-lg">
+                  {faq.question}
+                </span>
                 {openIndex === index ? (
-                  <Minus className="w-5 h-5 text-olive-gray flex-shrink-0" />
+                  <Minus style={{ color: "#292524" }} className="w-5 h-5 flex-shrink-0" />
                 ) : (
-                  <Plus className={`w-5 h-5 text-stone-400 flex-shrink-0 transition-transform ${openIndex === index ? 'rotate-45 text-olive-gray' : ''}`} />
+                  <Plus style={{ color: "#292524" }} className="w-5 h-5 flex-shrink-0 transition-transform" />
                 )}
               </button>
-              
-              <div 
-                className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                  openIndex === index ? 'max-h-[999px] opacity-100' : 'max-h-0 opacity-0'
-                }`}
-              >
+
+              <div className={`transition-all duration-300 ease-in-out overflow-hidden ${openIndex === index ? 'max-h-[999px] opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="px-6 py-4 text-stone-600 leading-relaxed border-t border-stone-200">
                   {faq.answer}
                 </div>
@@ -65,6 +63,14 @@ const FAQ: React.FC = () => {
           ))}
         </div>
       </div>
+
+      {/* Estilo global para hover dos botões */}
+      <style>{`
+        .faq-btn:hover {
+          background-color: #f5f5f4 !important; /* neutro, sem verde */
+          color: #292524 !important;
+        }
+      `}</style>
     </section>
   );
 };
