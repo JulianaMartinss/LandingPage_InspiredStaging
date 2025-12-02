@@ -152,7 +152,7 @@ const ContactPage: React.FC = () => {
 
           <div className="md:w-1/3 flex flex-col justify-center border-l border-stone-200 pl-8 space-y-8">
             <h2 className="text-2xl font-serif font-bold text-stone-800 mb-4">Contact Info</h2>
-            <p className="text-stone-600 mb-4">Reach us directly via email or phone. We're here to help and respond promptly.</p>
+            
 
             <a
               href="mailto:nastia_m@hotmail.com"
