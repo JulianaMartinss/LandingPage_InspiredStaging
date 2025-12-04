@@ -27,19 +27,25 @@ const Projects: React.FC = () => {
       status: "Sold After Staging",
       statusColor: "bg-[#716f5c]",
     },
+    
     {
       images: [
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800",
-        "https://images.unsplash.com/photo-1570129477492-452f1e68be40?auto=format&fit=crop&q=80&w=800"
+        "/images/house-sold-brookwood0.jpeg",
+        "/images/house-sold-brookwood1.jpeg", 
+        "/images/house-sold-brookwood2.jpeg", 
+        "/images/house-sold-brookwood3.jpeg", 
+        "/images/house-sold-brookwood4.jpeg",
+        "/images/house-sold-brookwood5.jpeg",
+        "/images/house-sold-brookwood6.jpeg",
+        "/images/house-sold-brookwood7.jpeg",
       ],
-      address: "450 Riverside Drive",
-      beds: 2,
-      baths: 2,
-      sqft: "1,100",
-      price: "$385,000",
-      status: "Currently for Sale",
-      statusColor: "bg-stone-600",
-      url: "https://johngrimes.atlcommunities.com/index.php?property=450-riverside-drive"
+      address: "6172 Brookwood Rd Peachtree Corners, GA",
+      beds: 3,
+      baths: 2.5,
+      sqft: "871",
+      price: "$270,000",
+      status: "Sold After Staging",
+      statusColor: "bg-[#716f5c]",
     },
     {
       images: ["https://i.pinimg.com/736x/7e/e2/56/7ee2569fb6fe306ecaad1d18c78ea362.jpg"],
