@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 
 const Hero: React.FC = () => {
   return (
@@ -22,14 +24,14 @@ const Hero: React.FC = () => {
           </h1>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <a 
+            <Link 
               // CORREÇÃO: Leva para a rota da nova página de contato
-              href="/contact" 
+              to="/contact" 
               // Removidos target="_blank" e rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-olive-dark text-white rounded-full font-medium text-lg hover:bg-stone-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Contact
-            </a>
+            </Link>
             <a 
               href="#gallery" 
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-stone-800 rounded-full font-medium text-lg hover:bg-[#F3E5DD] hover:text-[#A65A3A] transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
