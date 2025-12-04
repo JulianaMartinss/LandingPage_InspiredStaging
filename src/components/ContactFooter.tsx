@@ -25,7 +25,12 @@ const ContactFooter: React.FC = () => {
           <div>
             <h3 className="font-serif text-2xl font-bold text-white mb-6">Inspired Staging</h3>
             <div className="flex space-x-4">
-              <a href="#" style={{ color: '#f4f1ed' }}>
+              <a 
+                href="https://www.instagram.com/inspired.staging?igsh=Y2V4d3Q2ZGs3cTBu" 
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#f4f1ed' }}
+              >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
@@ -43,14 +48,15 @@ const ContactFooter: React.FC = () => {
           <div>
             <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-sm">Contact</h4>
             <div className="space-y-4" style={{ color: '#f4f1ed' }}>
-              <div className="flex items-center gap-3">
+              <a href="tel:+14046435225" className="flex items-center gap-3 hover:text-white/80 transition-colors">
                 <Phone className="w-4 h-4" />
                 <span>+1 404-643-5225</span>
-              </div>
-              <div className="flex items-center gap-3">
+              </a>
+
+              <a href="mailto:nastia_m@hotmail.com" className="flex items-center gap-3 hover:text-white/80 transition-colors">
                 <Mail className="w-4 h-4" />
                 <span>nastia_m@hotmail.com</span>
-              </div>
+              </a>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4" />
                 <span>Atlanta, GA</span>
